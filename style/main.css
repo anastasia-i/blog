@@ -1,0 +1,17 @@
+.card {
+  margin-bottom: 32px;
+}
+
+.card-date {
+  font-size: 10px;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.card-section {
+  padding: 50px 0;
+}
+
+.comment-title {
+  margin-bottom: 20px;
+}
