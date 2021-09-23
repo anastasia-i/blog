@@ -4,7 +4,7 @@
     <ul class="navbar-nav mr-auto">
         <?php foreach (getCategories($DBConnection) as $category) : ?>
             <li class="nav-item">
-                <a class="nav-link" href="./category.php?category_id=<?= $category['id'] ?>">
+                <a class="nav-link" href="category.php?category_id=<?= $category['id'] ?>">
                     <?= $category['name'] ?>
                 </a>
             </li>
