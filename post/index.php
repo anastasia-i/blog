@@ -14,15 +14,18 @@ $post = getPost($DBConnection, $postId);
     <title><?= $post['title'] ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
-<header>
-    <?php require_once '../templates/menu.php'; ?>
-</header>
+    <header>
+        <?php require_once '../templates/menu.php'; ?>
+    </header>
 
-<div class="container">
-    <?php require_once '../templates/post.php'; ?>
-</div>
+    <section class="card-section">
+        <div class="container">
+            <?php require_once '../templates/post.php'; ?>
+        </div>
+    </section>
 </body>
 </html>
 
