@@ -13,8 +13,10 @@
         <p class="card-date"><?= $post['date'] ?></p>
     </div>
     <div class="card-footer">
-        <a class="btn btn-primary" href="../post/update.php?post_id=<?= $post['id'] ?>">Update</a>
-        <a class="btn btn-danger" href="../post/delete.php?post_id=<?= $post['id'] ?>">Delete</a>
+        <?php if (isset($_GET['post_id'])) : ?>
+            <a class="btn btn-primary" href="../post/update.php?post_id=<?= $post['id'] ?>">Update</a>
+            <a class="btn btn-danger" href="../post/delete.php?post_id=<?= $post['id'] ?>">Delete</a>
+        <?php endif; ?>
     </div>
 </div>
 
